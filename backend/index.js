@@ -8,7 +8,7 @@ app.use(cors())
 app.use(express.json())
 app.use(express.static(path.join(__dirname, '../')))
 
-mongoose.connect("mongodb://127.0.0.1:27017/passkey").then(function(){
+mongoose.connect("mongodb+srv://pradeepbps24_db_user:1P1YKnOlikrjW1N5@cluster0.0ivcxj9.mongodb.net/passkey?appName=Cluster0").then(function(){
     console.log("DB Connected")
 }).catch(function(error){
     console.log("DB Connection Failed:", error.message)
